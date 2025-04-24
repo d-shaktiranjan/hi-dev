@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const args = process.argv.slice(2);
 const userName = (args[0] || "d-shaktiranjan").trim().replace(/@/, "");
 
