@@ -1,8 +1,6 @@
 const args = process.argv.slice(2);
 const userName = (args[0] || "d-shaktiranjan").trim().replace(/@/, "");
 
-console.log({ userName });
-
 getUserData(userName).then((data) => {
     if (data) {
         showDevCard(data);
