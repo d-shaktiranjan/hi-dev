@@ -1,15 +1,29 @@
 {
     "name": "hi-dev",
-    "version": "1.0.4",
-    "description": "",
+    "version": "1.0.5",
+    "description": "A simple Node.js CLI tool to fetch and display public GitHub user information directly in the terminal using npx.",
     "main": "index.js",
     "bin": {
         "hi-dev": "index.js"
     },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
+    "keywords": [
+        "github",
+        "cli",
+        "npx",
+        "developer",
+        "profile",
+        "github-user",
+        "terminal",
+        "nodejs",
+        "open-source",
+        "user-info",
+        "github-api",
+        "fetch-github",
+        "dev-info",
+        "hi-dev"
+    ],
+    "repository": "d-shaktiranjan/hi-dev",
+    "homepage": "https://github.com/d-shaktiranjan/hi-dev/blob/main/README.md",
     "author": "Shakti Ranjan Debata <debatashaktiranjan@gmail.com>",
     "license": "ISC",
     "packageManager": "pnpm@10.7.0"
