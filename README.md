@@ -22,7 +22,7 @@ Example
 npx hi-dev d-shaktiranjan
 ```
 
-Also you can mention `@` before the user name, but it's completely optional.
+You can also mention `@` before the username, but it's completely optional.
 
 ```bash
 npx hi-dev @d-shaktiranjan
@@ -41,3 +41,7 @@ Then use it like this
 ```bash
 hi-dev <github_username>
 ```
+
+## 📸 Output Preview
+
+![image](https://github.com/user-attachments/assets/cc4949ae-b43a-4359-bd59-082a1a7d2c27)
