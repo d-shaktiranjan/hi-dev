@@ -1,6 +1,6 @@
 # hi-dev
 
-> 🧑‍💻 A simple CLI tool to fetch and display public GitHub user information in the terminal.
+> 🧑‍💻 A simple Node.js CLI tool to fetch and display public GitHub user information directly in the terminal using npx.
 
 ## ✨ Features
 
