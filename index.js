@@ -5,29 +5,33 @@
     const args = process.argv.slice(2);
     const userName = (args[0] || "d-shaktiranjan").trim().replace(/^@/, "");
 
-    const userData = await fetchGitHubUser(userName);
-    if (userData) {
+    try {
+        const userData = await fetchGitHubUser(userName);
+        if (!userData) {
+            throw new Error("No data found for the specified user.");
+        }
         displayDevCard(userData);
-    } else {
-        console.error("❌ No data found for the specified user.");
+    } catch (err) {
+        console.error(`❌ ${err.message}`);
     }
 })();
 
 // fetch GitHub user data
 async function fetchGitHubUser(username) {
-    try {
-        const response = await fetch(
-            `https://api.github.com/users/${username}`
-        );
-        if (!response.ok) {
-            console.error("⚠️ Error fetching user data:", response.statusText);
-            return null;
+    const response = await fetch(`https://api.github.com/users/${username}`);
+
+    if (!response.ok) {
+        // Provide a meaningful message based on status
+        if (response.status === 404) {
+            throw new Error(`User "${username}" not found on GitHub.`);
+        } else {
+            throw new Error(
+                `GitHub API error: ${response.status} ${response.statusText}`
+            );
         }
-        return await response.json();
-    } catch (error) {
-        console.error("🚫 Failed to fetch data:", error.message);
-        return null;
     }
+
+    return await response.json();
 }
 
 // display the developer card in a styled box
