@@ -24,11 +24,20 @@ function showDevCard(data) {
     const lines = [];
 
     // Header
+    let companyStr = "";
+    if (data.company) {
+        const name = data.company;
+        const formattedName = `${GREEN}${name}${RESET}`;
+        companyStr = name.startsWith("@")
+            ? ` ${formattedName}`
+            : ` @ ${formattedName}`;
+    }
     lines.push(
         `${BOLD}Hey there!${RESET} I'm ${BLUE}${data.name}${RESET} — ${
             data.bio || "a developer"
-        }${data.company ? ` @ ${GREEN}${data.company}${RESET}` : ""}`
+        }${companyStr}`
     );
+
     if (data.location)
         lines.push(`📍 Location : ${CYAN}${data.location}${RESET}`);
     if (data.html_url)
