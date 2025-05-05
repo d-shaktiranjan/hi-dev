@@ -38,6 +38,7 @@ function showDevCard(data) {
         lines.push(
             `🐦 X        : ${BLUE}https://x.com/${data.twitter_username}${RESET}`
         );
+    if (data.email) lines.push(`✉️  Email    : ${CYAN}${data.email}${RESET}`);
     if (data.created_at)
         lines.push(
             `📅 Joined   : ${YELLOW}${new Date(
