@@ -36,7 +36,7 @@ function showDevCard(data) {
     if (data.blog) lines.push(`📰 Blog     : ${MAGENTA}${data.blog}${RESET}`);
     if (data.twitter_username)
         lines.push(
-            `🐦 Twitter  : ${BLUE}https://twitter.com/${data.twitter_username}${RESET}`
+            `🐦 X        : ${BLUE}https://x.com/${data.twitter_username}${RESET}`
         );
     if (data.created_at)
         lines.push(
