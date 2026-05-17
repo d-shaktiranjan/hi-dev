@@ -413,7 +413,7 @@ function renderTimeline(totalByYear, peakYear, contentWidth) {
         const size = maxTotal
             ? Math.max(1, Math.round((item.total / maxTotal) * barWidth))
             : 1;
-        const bar = `${GREEN}${"█".repeat(size)}${RESET}`;
+        const bar = `${GREEN}${"━".repeat(size)}${RESET}`;
         const marker =
             peakYear && item.year === peakYear.year
                 ? ` ${YELLOW}🔥${RESET}`
