@@ -46,4 +46,4 @@ hi-dev <github_username>
 
 ## 📸 Output Preview
 
-![image](https://github.com/user-attachments/assets/cc4949ae-b43a-4359-bd59-082a1a7d2c27)
+![image](https://github.com/user-attachments/assets/22784a49-6c4b-460d-8d6b-f85eb0b247ba)
