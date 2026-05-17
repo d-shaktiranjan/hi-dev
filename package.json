@@ -1,7 +1,7 @@
 {
     "name": "hi-dev",
-    "version": "1.0.6",
-    "description": "A simple Node.js CLI tool to fetch and display public GitHub user information directly in the terminal using npx.",
+    "version": "1.1.0",
+    "description": "A Node.js CLI tool to display a GitHub developer card with profile details and contribution activity directly in the terminal using npx.",
     "main": "index.js",
     "bin": {
         "hi-dev": "index.js"
