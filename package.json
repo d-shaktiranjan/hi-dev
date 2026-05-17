@@ -22,7 +22,10 @@
         "dev-info",
         "hi-dev"
     ],
-    "repository": "d-shaktiranjan/hi-dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d-shaktiranjan/hi-dev.git"
+    },
     "homepage": "https://github.com/d-shaktiranjan/hi-dev/blob/main/README.md",
     "author": "Shakti Ranjan Debata <debatashaktiranjan@gmail.com>",
     "license": "ISC",
