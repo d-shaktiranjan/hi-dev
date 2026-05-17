@@ -1,12 +1,14 @@
 # hi-dev
 
-> 🧑‍💻 A simple Node.js CLI tool to fetch and display public GitHub user information directly in the terminal using npx.
+> 🧑‍💻 A Node.js CLI tool to display a GitHub developer card with profile details and contribution activity directly in the terminal using npx.
 
 ## ✨ Features
 
--   Fetches public GitHub profile details (name, bio, location, repos, followers, etc.)
--   Displays info in a clean and readable terminal format
--   No setup required — just use with `npx`
+- Fetches public GitHub profile details (name, bio, location, repos, followers, etc.)
+- Fetches contribution activity from `github-contributions-api.jogruber.de`
+- Displays stats and a yearly contribution timeline
+- Adds quick npm package link and a command others can run to create their own card
+- No setup required — just use with `npx`
 
 ## 🚀 Usage
 
