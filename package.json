@@ -1,6 +1,6 @@
 {
     "name": "hi-dev",
-    "version": "1.0.6",
+    "version": "1.1.0-beta.0",
     "description": "A Node.js CLI tool to display a GitHub developer card with profile details and contribution activity directly in the terminal using npx.",
     "main": "index.js",
     "bin": {
